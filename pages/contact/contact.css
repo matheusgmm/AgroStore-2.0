@@ -1,0 +1,124 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-3);
+}
+
+.contact .container {
+    background-color: var(--color-7);
+    width: 35vw;
+    height: 80vh;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.container h3 {
+    /* position: absolute; */
+    font-size: 2rem;
+    color: var(--color-1);
+    font-weight: 700;
+    text-align: center;
+    /* top: 5%; */
+    /* padding-bottom: 16px; */
+    /* margin: 16px 5% 0 5%; */
+
+}
+
+.container p {
+    font-size: 1.8rem;
+    color: var(--color-3);
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 10%;
+    margin: 16px 5% 0 5%;
+}
+
+.input {
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    height: 64px;
+
+}
+
+.text-desc {
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    height: 240px;
+}
+
+.text-desc label {
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--color-3);
+    font-weight: 600;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-name label,
+.input-mail label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: var(--color-3);
+    font-weight: 600;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input input:focus~label,
+.input textarea:focus~label { 
+    top: -12px;
+}
+
+.input input,
+.input textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* padding: 0 35px 0 5px; */
+    padding-left: 2%;
+    padding-right: 8%;
+}
+
+.input textarea {
+    resize: none;
+    height: 100%;
+}
+
+.input-name i,
+.input-mail i {
+    position: absolute;
+    right: 8px;
+    top: 40%;
+    font-size: 1.2em;
+    color: var(--color-3);
+    /* line-height: 57px; */
+    font-weight: 500;
+}
+
+.text-desc i {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: var(--color-3);
+    line-height: 57px;
+    font-weight: 500;
+}

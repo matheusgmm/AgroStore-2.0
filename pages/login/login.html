@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroStore -  Login</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="#home" class="logo"><img src="../../assets/AgroStore.svg" alt="Logo - AgroStore"></a>
+            <nav class="navigation">
+                <a href="../home/home.html">Home</a>
+                <a href="../services/services.html">Serviços</a>
+                <a href="../galery/galery.html" >Galeria</a>
+                <a href="../contact/contact.html">Contato</a>
+                <a href="../login/login.html" class="active">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="wrapper">
+            <!-- <span class="icon-close"><i class='bx bx-x-circle'></i></span> -->
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form >
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bx-envelope'></i></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Lembre-me</label>
+                        <a href="##">Esqueceu a Senha?</a>
+                    </div>
+                    <button type="submit" class="btn-submit">Login</button>
+                    <div class="login-register">
+                        <p>Não tem uma conta? <a href="##" class="register-link">Registre-se</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registre-se</h2>
+                <form >
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bx-user'></i></span>
+                        <input type="text" required>
+                        <label>Nome de usuário</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bx-envelope'></i></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Eu concordo com os termos</label>
+                    </div>
+                    <button type="submit" class="btn-submit">Registre-se</button>
+                    <div class="login-register">
+                        <p>Já tem uma conta? <a href="##" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./login.js"></script>
+</body>
+</html>
